@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { jsPDF } from 'jspdf';
 // 👇 CRITICAL: These imports make the Google Login work
-import { auth, provider } from './firebase'; 
+import { auth, provider } from './Firebase'; 
 import { signInWithPopup, onAuthStateChanged, signOut } from 'firebase/auth';
 
 function App() {
