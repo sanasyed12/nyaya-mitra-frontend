@@ -33,7 +33,7 @@ function App() {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/history');
+      const res = await axios.get('https://nyaya-mitr-backend.onrender.com/api/history');
       setHistory(res.data);
     } catch (err) {
       console.error("Failed to load history");
@@ -86,7 +86,7 @@ function App() {
     setAgentResult(null);
     
     try {
-      const response = await axios.post('http://localhost:5000/api/generate-notice', {
+      const response = await axios.post('https://nyaya-mitr-backend.onrender.com/api/generate-notice', {
         userInput: userInput,
         language: language
       });
