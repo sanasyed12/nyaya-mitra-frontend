@@ -3,7 +3,7 @@ import axios from 'axios';
 import { jsPDF } from 'jspdf';
 // 👇 CRITICAL: These imports make the Google Login work
 import { auth, provider } from './Firebase'; 
-import { signInWithPopup, onAuthStateChanged, signOut } from 'firebase/auth';
+import { signInWithPopup, onAuthStateChanged, signOut } from 'Firebase/auth';
 
 function App() {
   const [userInput, setUserInput] = useState('');
